@@ -1,5 +1,5 @@
 # laptop configurations
-./$HOME/.config/void-linux/laptop_config.sh &
+./$HOME/.config/void-setup/laptop_config.sh &
 
 # Ensure XDG_RUNTIME_DIR is set
 export XDG_RUNTIME_DIR="/run/user/$(id -u)"
@@ -23,7 +23,7 @@ rfkill unblock bluetooth
 pipewire &
 
 # set background image
-feh --bg-scale ~/.config/void-linux/wallpapers/void-space.png  &
+feh --bg-scale ~/.config/void-setup/wallpapers/void-space.png  &
 
 # terminal transparency
 if ! ps aux | grep -v grep | grep picom > /dev/null; then
